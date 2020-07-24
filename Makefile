@@ -1,4 +1,4 @@
-identifier=com.quantil.CDN360DynamicAuth
+identifier=com.quantil.CDN360Authorize
 extensions_dir=$(HOME)/Library/Containers/com.luckymarmot.Paw/Data/Library/Application Support/com.luckymarmot.Paw/Extensions/
 
 build:
@@ -15,4 +15,4 @@ test:
 	npm test
 
 archive: build
-	cd ./build/; zip -r CDN360DynamicAuth.zip "$(identifier)/"
+	cd ./build/; zip -r CDN360Authorize.zip "$(identifier)/"

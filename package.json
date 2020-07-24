@@ -1,5 +1,5 @@
 {
-  "name": "CDN360DynamicAuth",
+  "name": "CDN360Authorize",
   "version": "1.0.0",
   "main": "src/CDN360DynamicAuth.js",
   "license": "MIT",

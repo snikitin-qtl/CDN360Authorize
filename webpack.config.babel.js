@@ -1,7 +1,7 @@
 import webpack from 'webpack'
 import path from 'path'
 
-const name = 'CDN360DynamicAuth'
+const name = 'CDN360Authorize'
 
 const config = {
   performance: {
@@ -13,11 +13,11 @@ const config = {
   mode: 'production',
   entry: [
     'immutable',
-    './src/CDN360DynamicAuth.js'
+    './src/CDN360Authorize.js'
   ],
   output:{
     path: path.join(__dirname,
-      './build/com.quantil.CDN360DynamicAuth'),
+      './build/com.quantil.CDN360Authorize'),
     publicPath: '/build/',
     filename: name+'.js'
   },

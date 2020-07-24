@@ -14,10 +14,10 @@ const makeAuthString = (user, pass) => {
 };
 
 @registerDynamicValueClass
-class CDN360DynamicAuth {
-  static identifier = 'com.quantil.CDN360DynamicAuth'
-  static title = 'CDN360 Dynamic Auth'
-  static help = 'https://quantil.com/'
+class CDN360Authorize {
+  static identifier = 'com.quantil.CDN360Authorize'
+  static title = 'CDN360 Authorize'
+  static help = 'https://docs.quantil.com/cdn/apidocs'
   static inputs = [
     InputField('apiName', 'API Name', "String", {placeholder: "Type API Name"}),
     InputField('apiKey', 'API Key', "SecureValue", {placeholder: "Type API Key"})

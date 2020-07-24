@@ -3,10 +3,14 @@ import path from 'path'
 
 const name = 'CDN360DynamicAuth'
 
-const production = process.env.NODE_ENV === 'production'
-
 const config = {
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
+  },
   target: 'web',
+  mode: 'production',
   entry: [
     'immutable',
     './src/CDN360DynamicAuth.js'
@@ -14,12 +18,11 @@ const config = {
   output:{
     path: path.join(__dirname,
       './build/com.quantil.CDN360DynamicAuth'),
-    pathInfo: true,
     publicPath: '/build/',
     filename: name+'.js'
   },
   module: {
-    loaders: [
+    rules: [
       {
         loader: 'babel-loader',
         include: [
